@@ -28,19 +28,14 @@ export type UploadArgs = Uint8Array
 export type UploadResponse = Promise<Receipt>
 
 export class Liteseed {
-  private url: string = "http://localhost:8000"
+  private url: string = "https://api.liteseed.xyz"
   private arweave: Arweave;
   private privateKey: any;
   private signer: Signer;
 
   constructor(privateKey: any) {
-    this.privateKey = privateKey;
     this.signer = new ArweaveSigner(privateKey);
-    this.arweave = Arweave.init({
-      host: "localhost",
-      port: "8008",
-      protocol: "http"
-    });
+    this.arweave = Arweave.init({});
   }
 
 
