@@ -3,3 +3,5 @@ arweave.json
 dist
 package-lock.json
 node_modules
+examples/package.json
+.idea

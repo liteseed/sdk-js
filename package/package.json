@@ -1,6 +1,6 @@
 {
   "name": "@liteseed/sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "",
   "main": "index.js",
@@ -13,12 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "@permaweb/aoconnect": "^0.0.51",
-    "arweave": "^1.15.1",
-    "warp-arbundles": "^1.0.4"
+    "arbundles": "^0.11.1",
+    "arweave": "^1.15.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.4",
     "@types/node": "^20.12.4",
     "typescript": "^5.4.3"
-  }
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
