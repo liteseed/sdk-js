@@ -1,5 +1,5 @@
 import { ArweaveSigner, createData, DataItem, type JWKInterface } from "arbundles";
-import type { ArweaveConfig, Receipt } from "./types.js";
+import type { Config, Receipt } from "./types.js";
 import Arweave from 'arweave';
 
 export type SignDataArgs = { data: Uint8Array | string; };
@@ -17,11 +17,12 @@ export type SendPaymentArgs = { dataItem: DataItem; };
 export type SendPaymentResponse = Promise<{ id: string; paymentId: string; }>;
 
 export class Liteseed {
-    private url: string = "https://api.liteseed.xyz"
+    private url: string;
     private arweave: Arweave;
     private readonly jwk: JWKInterface | any;
 
-    constructor(jwk: JWKInterface | any, apiConfig?: ArweaveConfig) {
+    constructor(jwk: JWKInterface | any, apiConfig?: Config) {
+        this.url = apiConfig?.url ?? "https://api.liteseed.xyz";
         this.jwk = jwk;
         this.arweave = Arweave.init({...apiConfig});
     }

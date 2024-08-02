@@ -11,5 +11,5 @@ export type {
     SendPaymentArgs,
     SendPaymentResponse
 } from "./liteseed.js";
-export type { ArweaveConfig, Receipt } from "./types.js";
+export type { Config as ArweaveConfig, Receipt } from "./types.js";
 export { Liteseed } from "./liteseed.js";

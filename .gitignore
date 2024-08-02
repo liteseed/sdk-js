@@ -5,3 +5,4 @@ package-lock.json
 node_modules
 examples/package.json
 .idea
+.DS_Store

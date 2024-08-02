@@ -2,6 +2,7 @@
   "name": "examples",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "sendData.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +13,6 @@
   },
   "private": true,
   "dependencies": {
-    "@liteseed/sdk": "file:../package"
+    "@liteseed/sdk": "file:../package/dist"
   }
 }
